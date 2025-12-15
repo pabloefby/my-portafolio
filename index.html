@@ -4,15 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi portafolio</title>
-    <link rel="shortcut icon" href="assets/img/perfil.jfif" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/perfil.jfif"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="backgroud-black"></div>
+    <div class="portafolio-viewer">
+      <button class="nav-portafolio no-sel-button" id="prev-button">
+        <img src="assets/svg/left-arrow.svg" alt="" />
+      </button>
+      <div class="cards-container">
+        <div class="proyecto-card">
+          <img src="/assets/img/proyecto.png" alt="img proyecto" />
+          <h1>The Otherside</h1>
+          <p>
+            Sitio web diseñado para que usuarios de diferentes partes de la
+            República Mexicana compartan anécdotas, historias, leyendas y
+            experiencias relacionadas con temas paranormales. Entre las
+            categorías principales se encuentran: leyendas, avistamientos de
+            extraterrestres, fantasmas, conspiraciones, entre otras.
+          </p>
+          <a href="https://github.com/pabloefby/the-otherside"
+            >Repositorio GitHub</a
+          >
+        </div>
+        <div class="proyecto-card">
+          <img src="/assets/img/proyecto_2.png" alt="img proyecto" />
+          <h1>Cibernautas</h1>
+          <p>
+            Sitio web diseñado para que usuarios de diferentes partes de la
+            República Mexicana compartan anécdotas, historias, leyendas y
+            experiencias relacionadas con temas paranormales. Entre las
+            categorías principales se encuentran: leyendas, avistamientos de
+            extraterrestres, fantasmas, conspiraciones, entre otras.
+          </p>
+          <a href="https://github.com/pabloefby/the-otherside"
+            >Repositorio GitHub</a
+          >
+        </div>
+        <div class="proyecto-card">
+          <img src="/assets/img/proyecto_3.jpg" alt="img proyecto" />
+          <h1>PalabraViva</h1>
+          <p>
+            Sitio web diseñado para que usuarios de diferentes partes de la
+            República Mexicana compartan anécdotas, historias, leyendas y
+            experiencias relacionadas con temas paranormales. Entre las
+            categorías principales se encuentran: leyendas, avistamientos de
+            extraterrestres, fantasmas, conspiraciones, entre otras.
+          </p>
+          <a href="https://github.com/pabloefby/the-otherside"
+            >Repositorio GitHub</a
+          >
+        </div>
+      </div>
+
+      <button class="nav-portafolio no-sel-button" id="next-button">
+        <img src="assets/svg/right-arrow.svg" alt="" />
+      </button>
+      <button class="close-portafolio no-sel-button">
+        <img src="assets/svg/close.svg" alt="" />
+      </button>
+    </div>
+
     <div class="main-container">
       <div class="left-container">
         <img class="img-perfil" src="assets/img/perfil.jfif" alt="" />
         <h1>Jorge Pablo Flores Blanco</h1>
         <h2>Programador fullstack y bases de datos.</h2>
+        <button class="button-pink no-sel-button" id="open-portafolio">
+          Abrir portafolio
+        </button>
         <div class="socials-row">
           <button class="button-pink">
             <img class="svg-logo" src="assets/svg/github_logo.svg" alt="" />
@@ -78,14 +143,15 @@
             <div class="info-text">
               <ul>
                 <li>
-                  <b>Resolución de Problemas:</b> Capacidad demostrada para analizar
-                  problemas complejos, desglosarlos en componentes manejables e
-                  implementar soluciones escalables y bien documentadas.
+                  <b>Resolución de Problemas:</b> Capacidad demostrada para
+                  analizar problemas complejos, desglosarlos en componentes
+                  manejables e implementar soluciones escalables y bien
+                  documentadas.
                 </li>
                 <li>
-                  <b>Aprendizaje Rápido:</b> Habilidad para dominar rápidamente nuevos
-                  lenguajes, frameworks y herramientas tecnológicas, adaptándome
-                  a los cambios del sector.
+                  <b>Aprendizaje Rápido:</b> Habilidad para dominar rápidamente
+                  nuevos lenguajes, frameworks y herramientas tecnológicas,
+                  adaptándome a los cambios del sector.
                 </li>
                 <li>
                   <b>Comunicación Técnica:</b> Destreza para comunicar conceptos
@@ -98,67 +164,6 @@
                   interfaz de usuario.
                 </li>
               </ul>
-            </div>
-          </div>
-          <div class="menu-item">
-            <h1>Portafolio</h1>
-            <div class="info-text">
-              <ol class="ol-proyecto">
-                <li class="li-proyecto">
-                  <p><b>Sistema de Gestión de Inventario (SGI):</b></p>
-                  <ul>
-                    <li>
-                      Descripción: Plataforma web full-stack diseñada para
-                      optimizar la gestión de existencias, pedidos y proveedores
-                      para pequeñas y medianas empresas.
-                    </li>
-                    <li>Tecnologías: React, Node.js (Express), PostgreSQL.</li>
-                    <li>
-                      Funcionalidad Destacada: Módulo de predicción de demanda
-                      basado en machine learning ligero (Python/Pandas) para
-                      optimizar los puntos de reorden.
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="li-proyecto">
-                  <p><b>Aplicación de Tareas y Productividad Móvil:</b></p>
-                  <ul>
-                    <li>
-                      Descripción: Aplicación nativa multiplataforma para la
-                      organización personal y la gestión de tiempo (técnica
-                      Pomodoro).
-                    </li>
-                    <li>
-                      Tecnologías: React Native, Firebase (Autenticación y Base
-                      de Datos en tiempo real).
-                    </li>
-                    <li>
-                      Funcionalidad Destacada: Sincronización offline y
-                      notificaciones push personalizadas para recordatorios.
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="li-proyecto">
-                  <p><b>Clone de Red Social para Intereses Específicos:</b></p>
-                  <ul>
-                    <li>
-                      Descripción: Una red social simplificada enfocada en la
-                      comunidad de fotografía. Permite subir imágenes, seguir
-                      usuarios y comentar.
-                    </li>
-                    <li>
-                      Tecnologías: Vue.js, Django, MongoDB (para almacenamiento
-                      de datos no estructurados).
-                    </li>
-                    <li>
-                      Funcionalidad Destacada: Filtro de contenido y sistema de
-                      hashtags con búsqueda optimizada.
-                    </li>
-                  </ul>
-                </li>
-              </ol>
             </div>
           </div>
         </div>
